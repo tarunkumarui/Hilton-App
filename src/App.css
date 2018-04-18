@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.form-wrapper {
+  display: flex;
+  margin-top: 10px;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+/* Keep the room 1 state but prevent user from editing*/
+form.form-wrapper section:nth-child(1) input{
+  display: none;
+}
+
+form.form-wrapper section:nth-child(1) header label{
+  padding-left: 5px;
+}
+
+.sections {
+  border: 2px solid #DDD;
+  border-radius: 5px;  
+  margin-right: 5px;
+  width: 95px;
+  height: 90px;
+}
+
+header {
+  background-color: #DDD;
+  height:20px;
+  
+}
+
+.checkbox {
+ margin: 0;
+}
+
+.checkbox label{
+ font-weight: 800;
+ vertical-align: -webkit-baseline-middle; 
+}
+
+.checkbox label input{
+  position: relative !important;
+  left: 5px;
+  margin-right: 10px;
+}
+
+main{
+  display: flex;
+  padding: 5px;
+}
+
+main div{
+  width: 50%;
+}
+
+label {
+  font-weight: 400;
+}
+
+button {
+  margin-top: 15px;
+}
+
+/* isDisabled color states */
+.isDisabled {
+  background-color: #DBDBE2;
+  border: 2px solid #CDCFDA;
+}
+
+.isDisabled header{
+  background-color: #DBDBE2;
+   border-radius: 5px;  
+}
+
+.isDisabled .checkbox label{
+  font-weight: 400;
+}
